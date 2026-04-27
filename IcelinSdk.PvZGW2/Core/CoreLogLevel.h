@@ -1,0 +1,28 @@
+#pragma once
+
+#include <IcelinSdk.PvZGW2/PrimitiveTypes.h>
+
+namespace fb
+{
+
+/* TypeInfo (Array): 0000000142833748
+   RuntimeId:        012F
+   TypeInfo Kind:    EnumTypeInfo
+   Address:          00000001430BC5E0
+*/
+enum CoreLogLevel
+{
+  CllNone = 0,
+  CllEventRecord = 1,
+  CllCrash = 2,
+  CllError = 3,
+  CllAssert = 4,
+  CllFatalAssert = 5,
+  CllValidate = 6,
+  CllWarning = 7,
+  CllInfo = 8,
+  CllOutput = 9,
+  CllDebug = 10,
+};
+
+}

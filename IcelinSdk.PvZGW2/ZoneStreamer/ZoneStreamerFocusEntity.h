@@ -1,0 +1,30 @@
+#pragma once
+
+#include <IcelinSdk.PvZGW2/PrimitiveTypes.h>
+#include <IcelinSdk.PvZGW2/ZoneStreamer/ZoneStreamerLogicEntity.h>
+
+namespace fb
+{
+
+/* TypeInfo (Array): 0000000000000000
+   RuntimeId:        2E47
+   TypeInfo Kind:    EntityClassInfo
+   ClassId:          0589
+   VfTable:          0000000000000000
+   Address (Base):   0000000143127EB0
+*/
+class ZoneStreamerFocusEntity : public ZoneStreamerLogicEntity
+{
+public:
+  typedef struct EntityClassInfo TypeInfo_t;
+
+  char pad_0040[0x0018];
+
+private:
+  /* Intended for use in Ida. Do not remove. */
+  static void IdaForceImport(TypeInfo_t);
+}; /* Size: 0x0058 */
+
+static_assert(sizeof(ZoneStreamerFocusEntity) == 88);
+
+}

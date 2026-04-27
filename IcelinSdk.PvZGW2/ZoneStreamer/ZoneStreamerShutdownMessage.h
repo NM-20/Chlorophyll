@@ -1,0 +1,30 @@
+#pragma once
+
+#include <IcelinSdk.PvZGW2/PrimitiveTypes.h>
+
+namespace fb
+{
+
+/* TypeInfo (Array): 0000000000000000
+   RuntimeId:        2E6F
+   TypeInfo Kind:    ValueTypeInfo
+   VfTable:          00000001423979C0
+   Address:          00000001430C03E8
+   Default Value:    0000000142877260
+*/
+#pragma pack(push, 8)
+struct ZoneStreamerShutdownMessage
+{
+  typedef struct ValueTypeInfo TypeInfo_t;
+
+  char pad_0000[0x0040];
+
+private:
+  /* Intended for use in Ida. Do not remove. */
+  static void IdaForceImport(TypeInfo_t);
+}; /* Size: 0x0040 */
+#pragma pack(pop)
+
+static_assert(sizeof(ZoneStreamerShutdownMessage) == 64);
+
+}
