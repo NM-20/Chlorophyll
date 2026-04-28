@@ -5,16 +5,15 @@
 #include <IcelinSdk.PvZGW2/CriticalSection.h>
 #include <IcelinSdk.PvZGW2/LateConstructed.h>
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
+#include <IcelinSdk.PvZGW2/IO/BundlePatchManifest.h>
 #include <IcelinSdk.PvZGW2/IO/IoService.h>
 #include <IcelinSdk.PvZGW2/IO/TurboBuffer.h>
 #include <IcelinSdk.PvZGW2/IO/TurboPriority.h>
+#include <IcelinSdk.PvZGW2/IO/TurboManifest.h>
+#include <IcelinSdk.PvZGW2/IO/TurboMux.h>
 
 namespace fb
 {
-
-enum {
-  kIo_maxBufferCount = kTurboBuffer_maxCount,
-};
 
 struct TurboReaderJobData {
   struct IoBufferInfo {
@@ -36,8 +35,20 @@ struct TurboReader {
   u16 seqnos[kTurboPriorityCount];
   u16 prevnos[kTurboPriorityCount];
 
-  /* TODO: Figure out the bitfields here. */
-  u32 pad : 32;
+  TurboBufferState state;
+
+  u32 doneReading    : 1;
+  u32 handshake      : 1;
+  u32 hasPatchBuffer : 1;
+  u32 pad            : 29;
+
+  TurboManifest manifest;
+  BundlePatchManifest patchManifest;
+
+  TurboBuffer buffer;
+  TurboBuffer patchBuffer;
+
+  TurboMux mux;
 };
 
 }

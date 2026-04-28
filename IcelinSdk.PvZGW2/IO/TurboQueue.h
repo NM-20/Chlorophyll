@@ -8,6 +8,7 @@
 #include <IcelinSdk.PvZGW2/MemoryArena.h>
 #include <IcelinSdk.PvZGW2/IO/IoLane.h>
 #include <IcelinSdk.PvZGW2/IO/IoService.h>
+#include <IcelinSdk.PvZGW2/IO/TurboConstants.h>
 #include <IcelinSdk.PvZGW2/IO/TurboPriority.h>
 
 #include <cstdint>
@@ -15,10 +16,6 @@
 
 namespace fb
 {
-
-enum {
-  kTurboQueue_maxPendingRemoveRequests = 32,
-};
 
 typedef eastl::hash_map<u32, uintptr_t> TurboResultMap;
 

@@ -4,13 +4,10 @@
 
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
 #include <IcelinSdk.PvZGW2/IO/IoReadFullFileTask.h>
+#include <IcelinSdk.PvZGW2/IO/TurboConstants.h>
 
 namespace fb
 {
-
-enum {
-  kIo_maxTaskSlotCount = 8,
-};
 
 struct IoLane {
   u32 workingTaskIndex;

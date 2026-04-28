@@ -7,7 +7,7 @@
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
 #include <IcelinSdk.PvZGW2/Core/Thread.h>
 #include <IcelinSdk.PvZGW2/IO/IoLane.h>
-#include <IcelinSdk.PvZGW2/IO/TurboBuffer.h>
+#include <IcelinSdk.PvZGW2/IO/TurboConstants.h>
 
 #include <eathread/eathread_condition.h>
 #include <eathread/eathread_mutex.h>

@@ -25,12 +25,12 @@ protected:
 
 public:
   typedef const T *const_iterator; 
-	typedef T        value_type;
-	typedef T       *pointer;
-	typedef const T *const_pointer;
-	typedef T       &reference;
-	typedef T       *iterator;       
-	typedef const T &const_reference;
+  typedef T        value_type;
+  typedef T       *pointer;
+  typedef const T *const_pointer;
+  typedef T       &reference;
+  typedef T       *iterator;       
+  typedef const T &const_reference;
 
   /* TODO: Implement this type more thoroughly, taking care to ensure it feels like a proper EASTL
      implementation.

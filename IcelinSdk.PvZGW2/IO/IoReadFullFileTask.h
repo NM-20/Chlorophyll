@@ -4,8 +4,8 @@
 
 #include <IcelinSdk.PvZGW2/SharedTypedefs.h>
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
-#include <IcelinSdk.PvZGW2/Core/Buffer.h>
-#include <IcelinSdk.PvZGW2/IO/TurboBuffer.h>
+#include <IcelinSdk.PvZGW2/IO/Buffer.h>
+#include <IcelinSdk.PvZGW2/IO/TurboConstants.h>
 
 namespace fb
 {
