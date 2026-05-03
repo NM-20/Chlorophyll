@@ -1676,7 +1676,7 @@ typedef EASTL_SSIZE_T eastl_ssize_t; // Signed version of eastl_size_t. Concept 
 	#define EASTLFree(allocator, p, size) (allocator).deallocate((void*)(p), (size)) // Important to cast to void* as p may be non-const.
 #endif
 
-#include <IcelinSdk.PvZGW2/EastlAllocator.h>
+#include <IcelinSdk.PvZGW2/Memory/EastlAllocator.h>
 #ifndef EASTLAllocatorType
 	#define EASTLAllocatorType ::fb::eastl_arena_allocator
 #endif

@@ -2,7 +2,7 @@
 
 /** @brief Provides the declaration for the `fb::eastl_arena_allocator` structure. */
 
-#include <IcelinSdk.PvZGW2/MemoryArena.h>
+#include <IcelinSdk.PvZGW2/Memory/MemoryArena.h>
 
 namespace fb
 {

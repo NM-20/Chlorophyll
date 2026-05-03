@@ -4,7 +4,6 @@
 
 #include <IcelinSdk.PvZGW2/CriticalSection.h>
 #include <IcelinSdk.PvZGW2/LateConstructed.h>
-#include <IcelinSdk.PvZGW2/MemoryArena.h>
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
 #include <IcelinSdk.PvZGW2/Core/Compartment.h>
 #include <IcelinSdk.PvZGW2/Core/ResourceSystemSync.h>
@@ -12,6 +11,7 @@
 #include <IcelinSdk.PvZGW2/IO/TurboStreamer.h>
 #include <IcelinSdk.PvZGW2/IO/TurboTimer.h>
 #include <IcelinSdk.PvZGW2/Jobs/JobInstanceHandle.h>
+#include <IcelinSdk.PvZGW2/Memory/MemoryArena.h>
 
 namespace fb
 {

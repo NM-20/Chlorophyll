@@ -3,9 +3,9 @@
 /** @brief Provides the declaration for the `ClassInfo` structure. */
 
 #include <IcelinSdk.PvZGW2/Core/DataContainer.h>
+#include <IcelinSdk.PvZGW2/Memory/MemoryArena.h>
 #include <IcelinSdk.PvZGW2/TypeInfo/BaseTypeInfo.h>
 #include <IcelinSdk.PvZGW2/TypeInfo/FieldInfo.h>
-#include <IcelinSdk.PvZGW2/MemoryArena.h>
 #include <IcelinSdk.PvZGW2/TypeInfo/ITypedObject.h>
 
 namespace fb

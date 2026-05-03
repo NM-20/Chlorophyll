@@ -7132,7 +7132,6 @@
 #include <IcelinSdk.PvZGW2/Core/ResourceCompartment.h>
 #include <IcelinSdk.PvZGW2/Core/ResourceManager.h>
 #include <IcelinSdk.PvZGW2/Core/ResourceSystemSync.h>
-#include <IcelinSdk.PvZGW2/Core/SegmentedLinearAllocator.h>
 #include <IcelinSdk.PvZGW2/Core/SmartRef.h>
 #include <IcelinSdk.PvZGW2/Core/Thread.h>
 #include <IcelinSdk.PvZGW2/ActionTreeShared/SchematicTreeEntityData.h>
@@ -7261,5 +7260,7 @@
 #include <IcelinSdk.PvZGW2/Reflection/PropertyModificationListener.h>
 #include <IcelinSdk.PvZGW2/Reflection/PropertyModificationQueue.h>
 #include <IcelinSdk.PvZGW2/IO/IoService.h>
+#include <IcelinSdk.PvZGW2/IO/SuperBundleManager.h>
 #include <IcelinSdk.PvZGW2/IO/TurboBuffer.h>
 #include <IcelinSdk.PvZGW2/IO/TurboLoader.h>
+#include <IcelinSdk.PvZGW2/Memory/SegmentedLinearAllocator.h>

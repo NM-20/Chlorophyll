@@ -3,9 +3,9 @@
 /** @brief Provides the declaration for various array types within Frostbite. */
 
 #include <IcelinSdk.PvZGW2/EastlBasicArray.h>
-#include <IcelinSdk.PvZGW2/MemoryArena.h>
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
 #include <IcelinSdk.PvZGW2/Core/SmartHandle.h>
+#include <IcelinSdk.PvZGW2/Memory/MemoryArena.h>
 
 #include <EASTL/type_traits.h>
 

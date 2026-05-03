@@ -3,11 +3,11 @@
 /** @brief Provides the declaration for the `IoService` structure and all related types. */
 
 #include <IcelinSdk.PvZGW2/LateConstructed.h>
-#include <IcelinSdk.PvZGW2/MemoryArena.h>
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
 #include <IcelinSdk.PvZGW2/Core/Thread.h>
 #include <IcelinSdk.PvZGW2/IO/IoLane.h>
 #include <IcelinSdk.PvZGW2/IO/TurboConstants.h>
+#include <IcelinSdk.PvZGW2/Memory/MemoryArena.h>
 
 #include <eathread/eathread_condition.h>
 #include <eathread/eathread_mutex.h>

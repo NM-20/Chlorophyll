@@ -2,8 +2,8 @@
 
 /** @brief Provides the declaration for the `SegmentedLinearAllocator` class and all related types. */
 
-#include <IcelinSdk.PvZGW2/MemoryArena.h>
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
+#include <IcelinSdk.PvZGW2/Memory/MemoryArena.h>
 
 namespace fb
 {

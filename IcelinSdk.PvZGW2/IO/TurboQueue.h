@@ -5,11 +5,11 @@
 #include <IcelinSdk.PvZGW2/CriticalSection.h>
 #include <IcelinSdk.PvZGW2/LateConstructed.h>
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
-#include <IcelinSdk.PvZGW2/MemoryArena.h>
 #include <IcelinSdk.PvZGW2/IO/IoLane.h>
 #include <IcelinSdk.PvZGW2/IO/IoService.h>
 #include <IcelinSdk.PvZGW2/IO/TurboConstants.h>
 #include <IcelinSdk.PvZGW2/IO/TurboPriority.h>
+#include <IcelinSdk.PvZGW2/Memory/MemoryArena.h>
 
 #include <cstdint>
 #include <EASTL/hash_map.h>

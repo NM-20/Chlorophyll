@@ -5,7 +5,7 @@
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
 #include <IcelinSdk.PvZGW2/Core/ArrayDefinitions.h>
 #include <IcelinSdk.PvZGW2/Core/Realm.h>
-#include <IcelinSdk.PvZGW2/Core/SegmentedLinearAllocator.h>
+#include <IcelinSdk.PvZGW2/Memory/SegmentedLinearAllocator.h>
 
 namespace fb
 {

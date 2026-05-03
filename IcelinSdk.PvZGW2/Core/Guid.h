@@ -4,6 +4,8 @@
 
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
 
+#include <EASTL/functional.h>
+
 namespace fb
 {
 
@@ -12,6 +14,15 @@ struct Guid {
   u16 data2;
   u16 data3;
   u8  data4[8];
+};
+
+}
+
+namespace eastl
+{
+
+template<>
+struct hash<fb::Guid> {
 };
 
 }
