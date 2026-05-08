@@ -6,13 +6,13 @@
 #include <IcelinSdk.PvZGW2/CopyContext.h>
 #include <IcelinSdk.PvZGW2/Core/Guid.h>
 #include <IcelinSdk.PvZGW2/Core/SHA1.h>
-#include <IcelinSdk.PvZGW2/StringBuilderBase.h>
 #include <IcelinSdk.PvZGW2/IObjectStream.h>
 #include <IcelinSdk.PvZGW2/Core/ResourceRef.h>
 #include <IcelinSdk.PvZGW2/Core/String.h>
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
 #include <IcelinSdk.PvZGW2/Skeleton.h>
 #include <IcelinSdk.PvZGW2/TypeInfo/BaseTypeInfo.h>
+#include <IcelinSdk.PvZGW2/Utilities/StringBuilder.h>
 
 #include <EASTL/string.h>
 

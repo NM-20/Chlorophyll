@@ -2,8 +2,8 @@
 
 /** @brief Provides the declaration for the `MemberInfo` structure. */
 
-#include <IcelinSdk.PvZGW2/Noncopyable.h>
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
+#include <IcelinSdk.PvZGW2/Utilities/Noncopyable.h>
 
 namespace fb
 {

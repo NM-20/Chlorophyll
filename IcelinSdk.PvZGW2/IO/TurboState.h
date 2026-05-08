@@ -27,7 +27,7 @@ enum TurboState {
   TurboState_initResource      = 12,
   TurboState_loadRetroResource = 13,
   TurboState_loadResource      = 14,
-  TurboState_unknown           = 15,
+  TurboState_fixupResource     = 15,
   TurboState_preChunks         = 16,
   TurboState_initChunk         = 17,
   TurboState_loadChunk         = 18,

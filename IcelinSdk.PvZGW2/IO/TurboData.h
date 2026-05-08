@@ -3,7 +3,7 @@
 /** @brief Provides the declaration for the `TurboData` structure. */
 
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
-#include <IcelinSdk.PvZGW2/Core/Compartment.h>
+#include <IcelinSdk.PvZGW2/IO/Compartment.h>
 #include <IcelinSdk.PvZGW2/IO/TurboEntry.h>
 #include <IcelinSdk.PvZGW2/IO/TurboManifest.h>
 #include <IcelinSdk.PvZGW2/IO/TurboQueue.h>

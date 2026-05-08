@@ -15,6 +15,13 @@
 namespace fb
 {
 
+struct TurboReaderInitParams {
+  IoService *io;
+  u32 ioLane;
+  IoService *patchIo;
+  u32 patchIoLane;
+};
+
 struct TurboReaderJobData {
   struct IoBufferInfo {
     IoService *io;

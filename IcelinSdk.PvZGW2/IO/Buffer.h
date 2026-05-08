@@ -2,8 +2,9 @@
 
 /** @brief Provides the declaration for the `Buffer` class and all related types. */
 
-#include <IcelinSdk.PvZGW2/Noncopyable.h>
 #include <IcelinSdk.PvZGW2/SharedTypedefs.h>
+#include <IcelinSdk.PvZGW2/Utilities/Noncopyable.h>
+#include <IcelinSdk.PvZGW2/Utilities/StringBuilder.h>
 
 namespace fb
 {
@@ -11,7 +12,7 @@ namespace fb
 typedef int IoError;
 
 class Buffer : Noncopyable {
-private:
+protected:
   const int m_caps;
   StreamSize m_bufferSize;
   void *m_nativeHandle;
@@ -39,7 +40,8 @@ public:
 };
 
 class BufferImpl : public Buffer {
-  
+protected:
+  ExtendableStringBuilder<192> m_ident;
 };
 
 }

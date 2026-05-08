@@ -2,8 +2,8 @@
 
 /** @brief Provides the declaration for the `CriticalSection` class. */
 
-#include <IcelinSdk.PvZGW2/Noncopyable.h>
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
+#include <IcelinSdk.PvZGW2/Utilities/Noncopyable.h>
 
 #include <eathread/eathread_futex.h>
 

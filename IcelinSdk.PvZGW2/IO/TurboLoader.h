@@ -5,9 +5,10 @@
 #include <IcelinSdk.PvZGW2/CriticalSection.h>
 #include <IcelinSdk.PvZGW2/LateConstructed.h>
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
-#include <IcelinSdk.PvZGW2/Core/Compartment.h>
-#include <IcelinSdk.PvZGW2/Core/ResourceSystemSync.h>
+#include <IcelinSdk.PvZGW2/IO/Compartment.h>
 #include <IcelinSdk.PvZGW2/IO/IoService.h>
+#include <IcelinSdk.PvZGW2/IO/ResourceSystemSync.h>
+#include <IcelinSdk.PvZGW2/IO/TurboServerSidePatcher.h>
 #include <IcelinSdk.PvZGW2/IO/TurboStreamer.h>
 #include <IcelinSdk.PvZGW2/IO/TurboTimer.h>
 #include <IcelinSdk.PvZGW2/Jobs/JobInstanceHandle.h>
@@ -42,6 +43,8 @@ struct alignas(128) TurboLoader {
   TurboTimer timer;
 
   alignas(128) TurboStreamer streamers[kTurboStreamer_count];
+
+  TurboServerSidePatcher serverSidePatcher;
 };
 
 }
