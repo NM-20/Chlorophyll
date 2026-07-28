@@ -2,20 +2,20 @@
 
 /** @brief Provides the declaration for the `ResourceManager::Compartment` class. */
 
-#include <IcelinSdk.PvZGW2/CriticalSection.h>
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
 #include <IcelinSdk.PvZGW2/Core/DataContainer.h>
 #include <IcelinSdk.PvZGW2/Core/Guid.h>
 #include <IcelinSdk.PvZGW2/Core/IResourceObject.h>
 #include <IcelinSdk.PvZGW2/IO/ChunkMetaRecord.h>
-#include <IcelinSdk.PvZGW2/IO/DatabaseDomain.h>
 #include <IcelinSdk.PvZGW2/IO/DomainInfo.h>
 #include <IcelinSdk.PvZGW2/IO/ResourceCompartment.h>
 #include <IcelinSdk.PvZGW2/IO/ResourceHandle.h>
 #include <IcelinSdk.PvZGW2/IO/ResourceManager.h>
 #include <IcelinSdk.PvZGW2/IO/ResourceRefResolver.h>
 #include <IcelinSdk.PvZGW2/IO/ResourceSysInvocation.h>
+#include <IcelinSdk.PvZGW2/IO/RuntimeDatabaseDomain.h>
 #include <IcelinSdk.PvZGW2/Memory/MemoryArena.h>
+#include <IcelinSdk.PvZGW2/Synchronization/CriticalSection.h>
 #include <IcelinSdk.PvZGW2/TypeInfo/ITypedObject.h>
 
 #include <EASTL/set.h>
@@ -49,7 +49,7 @@ private:
   ResourceCompartment m_thisCompartmentTag;
   ResourceCompartment m_parentCompartmentTag;
 
-  DatabaseDomain *m_domain;
+  RuntimeDatabaseDomain *m_domain;
   DomainInfo m_domainInfo;
 
   ResourceObjectVector m_pendingPostloads;

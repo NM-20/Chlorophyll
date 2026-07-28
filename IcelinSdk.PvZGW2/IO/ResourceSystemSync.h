@@ -2,7 +2,7 @@
 
 /** @brief Provides the declaration for the `ResourceSystemSync` structure. */
 
-#include <IcelinSdk.PvZGW2/CriticalSection.h>
+#include <IcelinSdk.PvZGW2/Synchronization/CriticalSection.h>
 
 namespace fb
 {

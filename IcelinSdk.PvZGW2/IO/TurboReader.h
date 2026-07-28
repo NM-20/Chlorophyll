@@ -2,8 +2,6 @@
 
 /** @brief Provides the declaration for the `TurboReader` structure. */
 
-#include <IcelinSdk.PvZGW2/CriticalSection.h>
-#include <IcelinSdk.PvZGW2/LateConstructed.h>
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
 #include <IcelinSdk.PvZGW2/IO/BundlePatchManifest.h>
 #include <IcelinSdk.PvZGW2/IO/IoService.h>
@@ -11,6 +9,8 @@
 #include <IcelinSdk.PvZGW2/IO/TurboPriority.h>
 #include <IcelinSdk.PvZGW2/IO/TurboManifest.h>
 #include <IcelinSdk.PvZGW2/IO/TurboMux.h>
+#include <IcelinSdk.PvZGW2/Synchronization/CriticalSection.h>
+#include <IcelinSdk.PvZGW2/Utilities/LateConstructed.h>
 
 namespace fb
 {

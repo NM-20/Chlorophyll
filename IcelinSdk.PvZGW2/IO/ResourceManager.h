@@ -2,23 +2,23 @@
 
 /** @brief Provides the declaration for the `ResourceManager` class. */
 
-#include <IcelinSdk.PvZGW2/CriticalSection.h>
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
 #include <IcelinSdk.PvZGW2/Core/ResourceManagerSettings.h>
 #include <IcelinSdk.PvZGW2/Core/SmartRef.h>
 #include <IcelinSdk.PvZGW2/Core/String.h>
 #include <IcelinSdk.PvZGW2/IO/AsyncResourceLoader.h>
 #include <IcelinSdk.PvZGW2/IO/Compartment.h>
-#include <IcelinSdk.PvZGW2/IO/DatabaseDomain.h>
 #include <IcelinSdk.PvZGW2/IO/InplaceReloadSupport.h>
 #include <IcelinSdk.PvZGW2/IO/IResourceLoader.h>
 #include <IcelinSdk.PvZGW2/IO/ResourceCompartment.h>
 #include <IcelinSdk.PvZGW2/IO/ResourceSystem.h>
+#include <IcelinSdk.PvZGW2/IO/RuntimeDatabaseDomain.h>
 #include <IcelinSdk.PvZGW2/IO/RuntimeDatabaseManager.h>
 #include <IcelinSdk.PvZGW2/IO/SuperbundleMountListener.h>
 #include <IcelinSdk.PvZGW2/IO/TurboLoaderSupport.h>
 #include <IcelinSdk.PvZGW2/IO/VirtualFileSystem.h>
 #include <IcelinSdk.PvZGW2/Memory/MemoryArena.h>
+#include <IcelinSdk.PvZGW2/Synchronization/CriticalSection.h>
 #include <IcelinSdk.PvZGW2/TypeInfo/BaseTypeInfo.h>
 #include <IcelinSdk.PvZGW2/Utilities/Optional.h>
 
@@ -70,7 +70,7 @@ private:
   AsyncResourceLoader *m_asyncResourceLoader;
   TurboLoader *m_turboLoader;
   Optional<RuntimeDatabaseManager> m_databaseManager;
-  DatabaseDomain *m_platformDomain;
+  RuntimeDatabaseDomain *m_platformDomain;
 
   ResourceManagerSettings *m_settings;
 

@@ -1,7 +1,5 @@
 #pragma once
 
-#include <IcelinSdk.PvZGW2/CriticalSection.h>
-#include <IcelinSdk.PvZGW2/LateConstructed.h>
 #include <IcelinSdk.PvZGW2/PathfindingShared/FollowObjectEntityData.h>
 #include <IcelinSdk.PvZGW2/PathfindingShared/FollowWaypointsEntityData.h>
 #include <IcelinSdk.PvZGW2/PathfindingShared/PathFollowingComponentData.h>
@@ -7126,6 +7124,7 @@
 #include <IcelinSdk.PvZGW2/Core/DebugRenderSettings.h>
 #include <IcelinSdk.PvZGW2/Core/ChunkOnlyResourceType.h>
 #include <IcelinSdk.PvZGW2/Core/IResourceObject.h>
+#include <IcelinSdk.PvZGW2/Core/ExecutionContext.h>
 #include <IcelinSdk.PvZGW2/Core/SmartRef.h>
 #include <IcelinSdk.PvZGW2/Core/Thread.h>
 #include <IcelinSdk.PvZGW2/ActionTreeShared/SchematicTreeEntityData.h>
@@ -7253,6 +7252,7 @@
 #include <IcelinSdk.PvZGW2/Reflection/PropertyModification.h>
 #include <IcelinSdk.PvZGW2/Reflection/PropertyModificationListener.h>
 #include <IcelinSdk.PvZGW2/Reflection/PropertyModificationQueue.h>
+#include <IcelinSdk.PvZGW2/IO/AsyncResourceHandle.h>
 #include <IcelinSdk.PvZGW2/IO/AsyncResourceLoader.h>
 #include <IcelinSdk.PvZGW2/IO/Compartment.h>
 #include <IcelinSdk.PvZGW2/IO/DatabaseManager.h>
@@ -7260,7 +7260,10 @@
 #include <IcelinSdk.PvZGW2/IO/ResourceCompartment.h>
 #include <IcelinSdk.PvZGW2/IO/ResourceManager.h>
 #include <IcelinSdk.PvZGW2/IO/ResourceSystemSync.h>
+#include <IcelinSdk.PvZGW2/IO/RuntimePartitionAndDomain.h>
 #include <IcelinSdk.PvZGW2/IO/SuperBundleManager.h>
 #include <IcelinSdk.PvZGW2/IO/TurboBuffer.h>
 #include <IcelinSdk.PvZGW2/IO/TurboLoader.h>
 #include <IcelinSdk.PvZGW2/Memory/SegmentedLinearAllocator.h>
+#include <IcelinSdk.PvZGW2/Synchronization/CriticalSection.h>
+#include <IcelinSdk.PvZGW2/Utilities/LateConstructed.h>

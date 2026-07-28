@@ -29,4 +29,9 @@ class StackAllocator {
   u32 m_blockSize;
 };
 
+class StackAllocatorWrapper {
+private:
+  StackAllocator *m_realAlloc;
+};
+
 }

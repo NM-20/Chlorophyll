@@ -2,8 +2,6 @@
 
 /** @brief Provides the declaration for the `TurboLoader` structure. */
 
-#include <IcelinSdk.PvZGW2/CriticalSection.h>
-#include <IcelinSdk.PvZGW2/LateConstructed.h>
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
 #include <IcelinSdk.PvZGW2/IO/Compartment.h>
 #include <IcelinSdk.PvZGW2/IO/IoService.h>
@@ -13,6 +11,8 @@
 #include <IcelinSdk.PvZGW2/IO/TurboTimer.h>
 #include <IcelinSdk.PvZGW2/Jobs/JobInstanceHandle.h>
 #include <IcelinSdk.PvZGW2/Memory/MemoryArena.h>
+#include <IcelinSdk.PvZGW2/Synchronization/CriticalSection.h>
+#include <IcelinSdk.PvZGW2/Utilities/LateConstructed.h>
 
 namespace fb
 {

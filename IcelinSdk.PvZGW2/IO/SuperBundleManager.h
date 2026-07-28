@@ -2,7 +2,6 @@
 
 /** @brief Provides the declaration for the `SuperBundleManager` class and all related types. */
 
-#include <IcelinSdk.PvZGW2/CriticalSection.h>
 #include <IcelinSdk.PvZGW2/ShortPrimitives.h>
 #include <IcelinSdk.PvZGW2/Core/Guid.h>
 #include <IcelinSdk.PvZGW2/Core/SHA1.h>
@@ -15,6 +14,7 @@
 #include <IcelinSdk.PvZGW2/IO/VirtualFileSystem.h>
 #include <IcelinSdk.PvZGW2/Memory/MemoryArena.h>
 #include <IcelinSdk.PvZGW2/Memory/StackAllocator.h>
+#include <IcelinSdk.PvZGW2/Synchronization/CriticalSection.h>
 #include <IcelinSdk.PvZGW2/Utilities/HashString.h>
 #include <IcelinSdk.PvZGW2/Utilities/StringCompare.h>
 

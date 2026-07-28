@@ -2,9 +2,9 @@
 
 /** @brief Provides the declaration for the `RuntimeDatabaseManager` class. */
 
-#include <IcelinSdk.PvZGW2/CriticalSection.h>
-#include <IcelinSdk.PvZGW2/IO/DatabaseDomain.h>
 #include <IcelinSdk.PvZGW2/IO/InternalDatabaseManager.h>
+#include <IcelinSdk.PvZGW2/IO/RuntimeDatabaseDomain.h>
+#include <IcelinSdk.PvZGW2/Synchronization/CriticalSection.h>
 
 #include <EASTL/fixed_vector.h>
 
@@ -21,7 +21,7 @@ private:
      from `InternalDatabaseManager` for migration.
   */
 
-  typedef eastl::fixed_vector<DatabaseDomain *, 64> DatabaseDomainList;
+  typedef eastl::fixed_vector<RuntimeDatabaseDomain *, 64> DatabaseDomainList;
 
   CriticalSection m_domainLock;
   DatabaseDomainList m_domains;
